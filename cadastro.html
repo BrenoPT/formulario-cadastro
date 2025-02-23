@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cadastro</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+	<main>
+		<form id="formulario-cadastro">
+			<h1>Cadastro de Produto</h1>
+			<a href="./listagem.html"><button type="button" id="ver-listagem">Ver Listagem</button></a>
+			<div class="nome">
+				<label for="nome">Nome do produto</label>
+				<input type="text" title="nome" id="nome" required />
+			</div>
+			<div class="descricao">
+				<label for="descricao">Descrição do produto</label>
+				<textarea title="descricao" id="descricao"></textarea>
+			</div>
+			<div class="valor">
+				<label for="valor">Valor</label>
+				<input type="number" title="valor" id="valor" placeholder="R$" step="0.01" min="0" required />
+			</div>
+			<div class="disp">
+				<label for="disp">Disponível?</label>
+				<select title="disp" id="disp">
+					<option value="Sim">Sim</option>
+					<option value="Não">Não</option>
+				</select>
+			</div>
+			<div class="botao">
+				<button type="submit" id="cadastrar">Cadastrar</button>
+			</div>
+		</form>
+	</main>
+	<script src="script-cadastro.js"></script>
+</body>
+
+</html>
